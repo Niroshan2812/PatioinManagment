@@ -1,0 +1,29 @@
+# --- IDE Configuration Files ---
+# Ignores IntelliJ IDEA project settings folder
+.idea/
+# Ignores IntelliJ module files
+*.iml
+# Ignores workspace configuration files
+*.iws
+*.ipr
+# Ignores VS Code workspace settings (since you are using it)
+.vscode/
+
+# --- Build Outputs & Maven ---
+# Ignores the compiled Java classes and build artifacts
+target/
+# Ignores standard Java package files
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# --- Miscellaneous ---
+# Ignores generated backup files seen in your screenshot
+*.bak
+# Ignores standard log files
+*.log
+# Ignores Java virtual machine crash logs
+hs_err_pid*

@@ -1,5 +1,15 @@
+
 ### GET request to example server
-GET https://examples.http-client.intellij.net/get
-    ?generated-in=IntelliJ IDEA
+POST  http://localhost:4000/patients
+Content-Type: application/json
+
+{
+  "name": "Jon Sae",
+  "email": "",
+  "address": "125 main add",
+  "dateOfBirth": "1998-12-09",
+  "registeredDate": "2024-11-23"
+}
+
 
 ###
