@@ -27,3 +27,5 @@ target/
 *.log
 # Ignores Java virtual machine crash logs
 hs_err_pid*
+
+patient-service-db/
