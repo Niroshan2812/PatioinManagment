@@ -4,10 +4,11 @@ POST  http://localhost:4000/patients
 Content-Type: application/json
 
 {
-  "name": "Jon Sae w",
-
+  "name": "Jon Sae with billing",
+  "email": "testbillingacc@gmail.com",
   "address": "125 main add",
-  "dateOfBirth": "1998-12-09"
+  "dateOfBirth": "1998-12-09",
+  "registeredDate": "2024-11-28"
 
 }
 
