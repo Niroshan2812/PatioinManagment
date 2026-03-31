@@ -27,7 +27,7 @@ WORKDIR /app
 # Copied the generated JAR from the 'builder' stage into this image as 'app.jar'
 COPY --from=builder /app/target/*.jar app.jar
 # Document that the container listens on port 4000
-EXPOSE 4000
+EXPOSE 4002
 
 # Define the command to run the application
 ENTRYPOINT ["java", "-jar", "app.jar"]
