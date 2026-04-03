@@ -1,0 +1,25 @@
+server:
+  port: 4004
+
+spring:
+  cloud:
+    gateway:
+      # This 'server' and 'webflux' nesting is strictly required for your Spring Cloud version
+      server:
+        webflux:
+          routes:
+            # 1. Route for the Patient Service
+            - id: patient-service-route
+              uri: http://patient-service:4000
+              predicates:
+                - Path=/api/patients/**, /api/patients
+              filters:
+                - StripPrefix=1
+
+            # 2. Route for the OpenAPI Docs
+            - id: api-docs-patient-route
+              uri: http://patient-service:4000
+              predicates:
+                - Path=/api-docs/patients
+              filters:
+                - RewritePath=/api-docs/patients,/v3/api-docs
